@@ -35,7 +35,7 @@ function renderUserList(countries) {
    countryList.innerHTML = '';
    countryInfo.innerHTML = '';
    if (countries.length >10) {
-     return  Notify.success('Too many matches found. Please enter a more specific name.');
+     return  Notify.info('Too many matches found. Please enter a more specific name.');
   }
   if (countries.length >1) {
     const markupList = templateList(countries);
